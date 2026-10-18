@@ -1,0 +1,19 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/*
+# keep IntelliJ project metadata if desired (flip to uncomment), else track gitignore
+!.idea/.gitignore
+
+# Logs & temp
+*.log
+*.tmp
+*.bak
+
+# Local build output (if any)
+node_modules/
+dist/
+target/
+*.class
