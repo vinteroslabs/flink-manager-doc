@@ -13,7 +13,7 @@ prebuilt Docker image. For other install paths (release bundle, systemd), see
 | Requirement | Minimum | Notes |
 |---|---|---|
 | Docker | any recent version | Recommended way to run Flink Manager |
-| Java | **22+** (JDK) | Only needed when running the release bundle directly |
+| Java | **25+** (JDK) | Only needed when running the release bundle directly |
 | PostgreSQL | 14+ | For persistent deployments. **Not** needed for a quick test (in-memory profile) |
 | Apache Flink cluster | 2.x | The cluster you want to manage |
 | Flink SQL Gateway | 2.x (optional) | Needed only for the SQL workbench features |

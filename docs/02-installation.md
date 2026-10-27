@@ -79,7 +79,7 @@ curl http://localhost:8080/actuator/health
 ```
 
 > 💡 The template pins `image: latest` with `pull_policy: always`. To stay on a fixed version,
-> replace `latest` with the release tag (e.g. `0.0.1`) — see [06 — Releases](06-releases.md).
+> replace `latest` with the release tag (e.g. `0.0.2`) — see [06 — Releases](06-releases.md).
 
 ### Upgrades
 
@@ -95,7 +95,7 @@ The database schema is migrated automatically on startup; no manual migration st
 
 The image is published on Docker Hub as
 [`vinteroslabs/flink-manager`](https://hub.docker.com/repository/docker/vinteroslabs/flink-manager),
-tagged per release (`0.0.1`) plus a rolling `latest`.
+tagged per release (`0.0.2`) plus a rolling `latest`.
 
 ```bash
 docker run -d --name flink-manager \
@@ -109,7 +109,7 @@ docker run -d --name flink-manager \
   -e FLINK_SQL_GATEWAY_URL="http://<flink-sqlgateway>:8083" \
   -e JWT_SECRET="<random-base64-secret>" \
   -e AUTH_SECRET_KEY="<random-32-bytes-base64>" \
-  vinteroslabs/flink-manager:0.0.1
+  vinteroslabs/flink-manager:0.0.2
 ```
 
 Notes:
@@ -151,14 +151,14 @@ flink-manager-<version>.zip
 
 ### 1. Prerequisites
 
-- **Java 22+** (JDK) on the host
+- **Java 25+** (JDK) on the host
 - A PostgreSQL database as above
 
 ### 2. Install
 
 ```bash
 sudo mkdir -p /opt/flink-manager
-sudo unzip flink-manager-0.0.1.zip -d /opt/flink-manager
+sudo unzip flink-manager-0.0.2.zip -d /opt/flink-manager
 sudo useradd --system --home /opt/flink-manager flinkmgr
 sudo chown -R flinkmgr:flinkmgr /opt/flink-manager
 ```

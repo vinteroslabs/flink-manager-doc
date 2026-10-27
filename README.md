@@ -1,6 +1,6 @@
 # Flink Manager
 
-![Licensed software](https://img.shields.io/badge/license-commercial-blue) ![Released version](https://img.shields.io/badge/version-0.0.1-lightgrey)
+![Licensed software](https://img.shields.io/badge/license-commercial-blue) ![Released version](https://img.shields.io/badge/version-0.0.2-lightgrey)
 
 **Flink Manager** is a web console for operating an [Apache Flink](https://flink.apache.org/) cluster.
 It proxies and enriches the Flink REST API, adds persistence (notifications), and ships an
@@ -46,8 +46,8 @@ A quick look at the console — the full tour is in [05 — Screenshots](docs/05
 
 | Channel | Artifact |
 |---|---|
-| Release bundle | [flink-manager-0.0.1.zip](https://github.com/vinteroslabs/flink-manager-doc/releases/download/v0.0.1/flink-manager-0.0.1.zip) — application jar + start scripts + systemd unit |
-| Docker image | [`vinteroslabs/flink-manager:0.0.1`](https://hub.docker.com/repository/docker/vinteroslabs/flink-manager) on Docker Hub |
+| Release bundle | [flink-manager-0.0.2.zip](https://github.com/vinteroslabs/flink-manager-doc/releases/download/v0.0.2/flink-manager-0.0.2.zip) — application jar + start scripts + systemd unit |
+| Docker image | [`vinteroslabs/flink-manager:0.0.2`](https://hub.docker.com/repository/docker/vinteroslabs/flink-manager) on Docker Hub |
 
 ## Documentation
 
@@ -73,6 +73,6 @@ A quick look at the console — the full tour is in [05 — Screenshots](docs/05
 
 ## Prerequisites
 
-- **Docker** to run the container image, **or Java 22+** (JDK) to run the release bundle directly
+- **Docker** to run the container image, **or Java 25+** (JDK) to run the release bundle directly
 - A **PostgreSQL** database (the schema is created and migrated automatically on first start)
 - A running **Apache Flink 2.x cluster** (SQL Gateway optional)

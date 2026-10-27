@@ -6,6 +6,7 @@ This page lists the released versions of Flink Manager and their highlights.
 
 | Version | Release date | Highlights |
 |---|---|---|
+| [0.0.2](#002--security-hardening) | 2026-10-27 | Security hardening, multi-platform Docker image |
 | [0.0.1](#001--first-release) | 2026-10-17 | First public release |
 
 ## Artifacts
@@ -16,6 +17,35 @@ This page lists the released versions of Flink Manager and their highlights.
 | Docker image | [`vinteroslabs/flink-manager:<version>`](https://hub.docker.com/repository/docker/vinteroslabs/flink-manager) on Docker Hub (plus `latest`) |
 
 ## Changelog
+
+### 0.0.2 — Security hardening
+
+*2026-10-27*
+
+Second release of Flink Manager. This release closes the vulnerabilities found in the Docker
+Hub scan of the `0.0.1` image and ships a truly portable Docker image.
+
+**Security fixes**
+
+- Upgraded the underlying application stack to the currently maintained versions, replacing
+  the components that drove the scan findings (web server, framework, security, JSON and
+  database driver libraries).
+- Removed vulnerable legacy dependencies that were no longer needed.
+- Docker base image upgraded to a maintained long-term-support Java runtime, with OS packages
+  patched at image build time.
+- Internal hardening across the security, user-role and licence code paths, plus new
+  integration tests.
+
+**Docker image compatibility**
+
+- Images are now built as **multi-platform manifests (`linux/amd64` + `linux/arm64`)** and
+  published under a single tag. The `0.0.1` image was published with only the architecture of
+  the build machine; from this release on, the same tag pulls natively on x86-64 hosts
+  (Windows / Linux) and on Apple Silicon / ARM servers — no emulation flags needed.
+
+**New features**
+
+- Configurable OpenAPI / Swagger UI deployment settings (UI exposure, path, etc.).
 
 ### 0.0.1 — First release
 

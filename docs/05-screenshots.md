@@ -1,7 +1,7 @@
 # 05 — Screenshots
 
 A visual tour of the Flink Manager console. All screenshots were taken from a real running
-instance (version 0.0.1) connected to a live Apache Flink 2.x cluster.
+instance (version 0.0.2) connected to a live Apache Flink 2.x cluster.
 
 Screenshots are organised in one folder per documentation section, mirroring the guide
 structure:
@@ -338,7 +338,7 @@ resource, user and date range, and export to CSV.
 ![Datasets list](screenshots/console/datasets/datasets-list.png)
 
 *Datasets* manages cached datasets with add, refresh and delete operations. **Preview
-feature** — marked *Coming Soon* in 0.0.1.
+feature** — marked *Coming Soon* in 0.0.1 and still in preview in 0.0.2.
 
 ![Delete dataset](screenshots/console/datasets/datasets-delete.png)
 
@@ -366,7 +366,7 @@ The **Connector Registry** tab lists the connector types available on the cluste
 
 The *Flow Designer* is a visual editor for building pipelines from a palette of sources
 (Kafka, File), transformations (Map, Filter, Window) and sinks (Kafka, File, Print).
-**Preview feature** — marked *Coming Soon* in 0.0.1.
+**Preview feature** — marked *Coming Soon* in 0.0.1 and still in preview in 0.0.2.
 
 ![Import flow](screenshots/console/designer/flow-import.png)
 
